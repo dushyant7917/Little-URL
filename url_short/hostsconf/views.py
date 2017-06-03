@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.http import HttpResponseRedirect
 
-DEFAULT_REDIRECT_URL = getattr(settings, "DEFAULT_REDIRECT_URL", "http://www.dushyant7917.com:8000")
+DEFAULT_REDIRECT_URL = getattr(settings, "DEFAULT_REDIRECT_URL", "https://little-url-7917.herokuapp.com")
 
 def wildcard_redirect(request, path = None):
     new_url = DEFAULT_REDIRECT_URL

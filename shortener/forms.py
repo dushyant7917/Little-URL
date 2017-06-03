@@ -7,7 +7,7 @@ class SubmitUrlForm(forms.Form):
         validators = [validate_url],
         widget = forms.TextInput(
             attrs = {
-                "placeholder": "Long URL",
+                "placeholder": "Paste long URL here ...",
                 "class": "form-control"
                 }
             )

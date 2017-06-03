@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7lxun817r(3tqso(pegial#3w*f#-+!8tlv_pd$6l@_b+0mgop'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -49,7 +49,7 @@ ROOT_URLCONF = 'url_short.urls'
 
 ROOT_HOSTCONF = 'url_short.hosts'
 DEFAULT_HOST = 'little-url-7917'
-DEFAULT_REDIRECT_URL = 'http://little-url-7917.herokuapp.com'
+DEFAULT_REDIRECT_URL = 'https://little-url-7917.herokuapp.com'
 PARENT_HOST = "herokuapp.com"
 
 TEMPLATES = [

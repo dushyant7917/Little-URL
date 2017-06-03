@@ -1,0 +1,15 @@
+{% extends "shortener/base.html" %}
+
+{% block title %}
+{{ object.shortcode }}
+{% endblock title %}
+
+{% block content %}
+<div class="text-center col-sm-12">
+  <h4>URL already shortened!</h4>
+  <p>{{ object.url }}</p>
+  {% if object.count > 0 %}<p>Count: {{ object.count }}</p>{% endif %}
+  <p><a href="{{ object.get_short_url }}">{{ object.get_short_url }}</a></p>
+  <a class="btn btn-default" href="/">+ New</a>
+</div>
+{% endblock content %}
